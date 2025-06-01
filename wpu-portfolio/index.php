@@ -91,7 +91,7 @@ if (isset($media['data']) && count($media['data']) >= 1) {
         <div class="text-center">
           <img src="img/profile5.png" class="rounded-circle img-thumbnail">
           <h1 class="display-4">Wilda Lestari</h1>
-          <h3 class="lead">Collage student | Programmer | Youtuber</h3>
+          <h3 class="lead">Collage student | Programmer | Travellover</h3>
         </div>
       </div>
     </div>
@@ -114,27 +114,27 @@ if (isset($media['data']) && count($media['data']) >= 1) {
         <div class="row">
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/1.png" alt="Card image cap">
+              <img class="card-img-top" src="img\thumbs\13.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Halo,saya wilda lestari Aku berasal dari Riau.Saya lahit pada 03 maret 2004.</p>
               </div>
             </div>
           </div>
 
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/2.png" alt="Card image cap">
+              <img class="card-img-top" src="img/thumbs/14.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Saat ini sedang menempuh pendidikan sarjana di jurusan Sistem Informasi, Universitas Islam Negeri Imam Bonjol Padang.</p>
               </div>
             </div>
           </div>
 
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/3.png" alt="Card image cap">
+              <img class="card-img-top" src="img/thumbs/4.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text"> walapun tidak menyukai dunia percodingan. Tapi justru dari sinilah aku belajar banyak hal baru—bagaimana menyusun logika, berpikir sistematis, menyelesaikan masalah, dan membangun sesuatu dari nol.</p>
               </div>
             </div>
           </div>   
@@ -142,17 +142,17 @@ if (isset($media['data']) && count($media['data']) >= 1) {
          <div class="row">
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/4.png" alt="Card image cap">
+              <img class="card-img-top" src="img/thumbs/15.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text"> aku senang membaca novel—bukan hanya sebagai hiburan, tapi juga sebagai cara untuk memperluas wawasan, memahami beragam sudut pandang, dan menambah pengetahuan secara tidak langsung. </p>
               </div>
             </div>
           </div> 
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/5.png" alt="Card image cap">
+              <img class="card-img-top" src="img/thumbs/16.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                <p class="card-text">aku juga sering menonton film sebagai bentuk hiburan dan healing dari rutinitas—membantuku rileks, rehat sejenak, dan kembali semangat menjalani hari..
                 </p>
               </div>
             </div>
@@ -160,9 +160,9 @@ if (isset($media['data']) && count($media['data']) >= 1) {
 
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/6.png" alt="Card image cap">
+              <img class="card-img-top" src="img/thumbs/17.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Aku percaya bahwa setiap proses belajar, sekecil apa pun, akan membentuk versi diriku yang lebih baik di masa depan. Aku bukan hanya ingin memahami teknologi, tapi juga tumbuh sebagai pribadi yang adaptif, terbuka, dan siap menghadapi berbagai tantangan.</p>
               </div>
             </div>
           </div>
@@ -235,18 +235,20 @@ if (isset($media['data']) && count($media['data']) >= 1) {
         <div class="row">
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/1.png" alt="Card image cap">
+              <img class="card-img-top" src="img/thumbs/19.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text"> PIZZA-HUT</p>
+                <p class="card-text"> project sederhana menggunakan API pada wpu pizza hut </p>
               </div>
             </div>
           </div>
 
           <div class="col-md mb-4">
             <div class="card">
-              <img class="card-img-top" src="img/thumbs/2.png" alt="Card image cap">
+              <img class="card-img-top" src="img/thumbs/22.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">JSON</p>
+                <p class="card-text">Implementasi dasar API dengan sumber data JSON.</p>
               </div>
             </div>
           </div>
@@ -255,7 +257,8 @@ if (isset($media['data']) && count($media['data']) >= 1) {
             <div class="card">
               <img class="card-img-top" src="img/thumbs/3.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">WPU-MOVIE </p>
+                <p class="card-text">Implementasi sederhana menggunakan OMDBAPI manggunakan data movie</p>
               </div>
             </div>
           </div>   
@@ -266,7 +269,8 @@ if (isset($media['data']) && count($media['data']) >= 1) {
             <div class="card">
               <img class="card-img-top" src="img/thumbs/4.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">WPU-PORTOFOLIO</p>
+                <p class="card-text">Menggunakan API wpu portofolio yang di ambil dari youtube dan instagram</p>
               </div>
             </div>
           </div> 
@@ -274,7 +278,9 @@ if (isset($media['data']) && count($media['data']) >= 1) {
             <div class="card">
               <img class="card-img-top" src="img/thumbs/5.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                <p class="card-text">WPU-REST-SERVER</p>
+                <p class="card-text">Membuat Rest-Server menggunakan Codeeigniter</p>
+               
                 </p>
               </div>
             </div>
@@ -284,7 +290,8 @@ if (isset($media['data']) && count($media['data']) >= 1) {
             <div class="card">
               <img class="card-img-top" src="img/thumbs/6.png" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">WPU-REST-CLIENT</p>
+                <p class="card-text">Implementasi Rest-Client menggunakan Codeeigniter</p>
               </div>
             </div>
           </div>
@@ -314,7 +321,7 @@ if (isset($media['data']) && count($media['data']) >= 1) {
             <ul class="list-group mb-4">
               <li class="list-group-item"><h3>Location</h3></li>
               <li class="list-group-item">My Home</li>
-              <li class="list-group-item">Pasir Pengaraian</li>
+              <li class="list-group-item">Pasir Pengaraian,Riau</li>
               <li class="list-group-item">West Sumatera,Indonesia</li>
             </ul>
           </div>
