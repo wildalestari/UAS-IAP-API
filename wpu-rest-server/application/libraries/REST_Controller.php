@@ -6,7 +6,6 @@ use Exception;
 use stdClass;
 
 defined('BASEPATH') OR exit('No direct script access allowed');
-
 /**
  * CodeIgniter Rest Controller
  * A fully RESTful server implementation for CodeIgniter using one library, one config file and one controller.
@@ -175,17 +174,6 @@ abstract class REST_Controller extends CI_Controller {
      * @var array
      */
     protected $allowed_http_methods = ['get', 'delete', 'post', 'put', 'options', 'patch', 'head'];
-
-    public $config;
-    public $lang;
-    public $uri;
-    public $db;
-    public $input;
-    public $output;
-    public $router;
-    public $session;
-    public $security;
-    
 
     /**
      * Contains details about the request
@@ -393,7 +381,6 @@ abstract class REST_Controller extends CI_Controller {
      * @return void
      */
     protected function early_checks()
-    
     {
     }
 
@@ -1044,29 +1031,31 @@ abstract class REST_Controller extends CI_Controller {
      * @access protected
      * @return string|NULL Supported request method as a lowercase string; otherwise, NULL if not supported
      */
-   protected function _detect_method()
-{
-    $method = NULL;
-
-    if ($this->config->item('enable_emulate_request') === TRUE)
+    protected function _detect_method()
     {
-        $method = $this->input->post('_method');
-        if ($method === NULL)
+        // Declare a variable to store the method
+        $method = NULL;
+
+        // Determine whether the 'enable_emulate_request' setting is enabled
+        if ($this->config->item('enable_emulate_request') === TRUE)
         {
-            $method = $this->input->server('HTTP_X_HTTP_METHOD_OVERRIDE');
+            $method = $this->input->post('_method');
+            if ($method === NULL)
+            {
+                $method = $this->input->server('HTTP_X_HTTP_METHOD_OVERRIDE');
+            }
+
+            $method = strtolower($method);
         }
 
-        // Pastikan $method adalah string sebelum strtolower
-        $method = is_string($method) ? strtolower($method) : null;
-    }
+        if (empty($method))
+        {
+            // Get the request method as a lowercase string
+            $method = $this->input->method();
+        }
 
-    if (empty($method))
-    {
-        $method = $this->input->method();
+        return in_array($method, $this->allowed_http_methods) && method_exists($this, '_parse_' . $method) ? $method : 'get';
     }
-
-    return in_array($method, $this->allowed_http_methods) && method_exists($this, '_parse_' . $method) ? $method : 'get';
-}
 
     /**
      * See if the user has provided an API key
@@ -2118,7 +2107,7 @@ abstract class REST_Controller extends CI_Controller {
         }
 
         $md5 = md5(strtoupper($this->request->method).':'.$digest['uri']);
-        $valid_response = md5($username.':'.$digest['nonce'].':'.$digest['nc'].':'.$digest['cnonce'].':'.$digest['qop'].':'.$md5);
+        $valid_response = md5($digest['username'].':'.$digest['nonce'].':'.$digest['nc'].':'.$digest['cnonce'].':'.$digest['qop'].':'.$md5);
 
         // Check if the string don't compare (case-insensitive)
         if (strcasecmp($digest['response'], $valid_response) !== 0)
