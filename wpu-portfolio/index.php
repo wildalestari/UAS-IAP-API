@@ -75,7 +75,7 @@ if (isset($media['data']) && count($media['data']) >= 1) {
               <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#about">About Me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -91,7 +91,7 @@ if (isset($media['data']) && count($media['data']) >= 1) {
         <div class="text-center">
           <img src="img/profile5.png" class="rounded-circle img-thumbnail">
           <h1 class="display-4">Wilda Lestari</h1>
-          <h3 class="lead">Lecturer | Programmer | Youtuber</h3>
+          <h3 class="lead">Collage student | Programmer | Youtuber</h3>
         </div>
       </div>
     </div>
@@ -102,23 +102,75 @@ if (isset($media['data']) && count($media['data']) >= 1) {
       <div class="container">
         <div class="row mb-4">
           <div class="col text-center">
-            <h2>About</h2>
+            <h2>About Me</h2>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, molestiae sunt doloribus error ullam expedita cumque blanditiis quas vero, qui, consectetur modi possimus. Consequuntur optio ad quae possimus, debitis earum.</p>
+      <section class="About Me bg-light" id="About Me">
+      <div class="container">
+        <div class="row pt-4 mb-4">
+          <div class="col text-center">
           </div>
-          <div class="col-md-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, molestiae sunt doloribus error ullam expedita cumque blanditiis quas vero, qui, consectetur modi possimus. Consequuntur optio ad quae possimus, debitis earum.</p>
+        </div>
+        <div class="row">
+          <div class="col-md mb-4">
+            <div class="card">
+              <img class="card-img-top" src="img/thumbs/1.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md mb-4">
+            <div class="card">
+              <img class="card-img-top" src="img/thumbs/2.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md mb-4">
+            <div class="card">
+              <img class="card-img-top" src="img/thumbs/3.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>   
+        </div>
+         <div class="row">
+          <div class="col-md mb-4">
+            <div class="card">
+              <img class="card-img-top" src="img/thumbs/4.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div> 
+          <div class="col-md mb-4">
+            <div class="card">
+              <img class="card-img-top" src="img/thumbs/5.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md mb-4">
+            <div class="card">
+              <img class="card-img-top" src="img/thumbs/6.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
 
 
     <!-- Youtube & IG -->
-     < class="social bg-light" id="social">
         <div class="container">
           <div class="row pt-4 mb-4">
             <div class="col text-center">
@@ -261,9 +313,9 @@ if (isset($media['data']) && count($media['data']) >= 1) {
             
             <ul class="list-group mb-4">
               <li class="list-group-item"><h3>Location</h3></li>
-              <li class="list-group-item">My Office</li>
-              <li class="list-group-item">Jl. Setiabudhi No. 193, Bandung</li>
-              <li class="list-group-item">West Java, Indonesia</li>
+              <li class="list-group-item">My Home</li>
+              <li class="list-group-item">Pasir Pengaraian</li>
+              <li class="list-group-item">West Sumatera,Indonesia</li>
             </ul>
           </div>
 
@@ -302,7 +354,7 @@ if (isset($media['data']) && count($media['data']) >= 1) {
       <div class="container">
         <div class="row">
           <div class="col text-center">
-            <p>Copyright &copy; 2018.</p>
+            <p>wildalstr__2025.</p>
           </div>
         </div>
       </div>
