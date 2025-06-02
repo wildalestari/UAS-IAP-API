@@ -219,7 +219,7 @@ if (isset($media['data']) && count($media['data']) >= 1) {
             </div>
             <div class="row">
           <div class="col">
-            <img src="<?= $gambar; ?>" class="img-fluid rounded">
+            <!-- <img src="<?= $gambar; ?>" class="img-fluid rounded"> -->
           </div>
         </div>
       </div>
