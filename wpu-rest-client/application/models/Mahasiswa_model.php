@@ -1,11 +1,14 @@
-<?php
+<?php 
+require_once APPPATH . '../vendor/autoload.php';
+
 use GuzzleHttp\Client;
 
-class Mahasiswa_model extends CI_model {
-
+class Mahasiswa_model extends CI_model
+{
     private $_client;
 
-    public function __construct(){
+    public function __construct()
+    {
         $this->_client = new Client([
             'base_uri' => 'http://localhost/rest-api/wpu-rest-server/api/',
             'auth' => ['admin', '1234']
@@ -13,7 +16,8 @@ class Mahasiswa_model extends CI_model {
     }
     public function getAllMahasiswa()
     {
-        $response = $this->_client->request('get', 'mahasiswa', [
+
+        $response = $this->_client->request('GET', 'mahasiswa', [
             'query' => [
                 'wpu-key' => 'rahasia'
             ]
@@ -22,11 +26,11 @@ class Mahasiswa_model extends CI_model {
         $result = json_decode($response->getBody()->getContents(), true);
 
         return $result['data'];
+        // return $this->db->get('mahasiswa')->result_array();
     }
-
     public function getMahasiswaById($id)
     {
-        $response = $this->_client->request('get', 'mahasiswa', [
+        $response = $this->_client->request('GET', 'mahasiswa', [
             'query' => [
                 'wpu-key' => 'rahasia',
                 'id' => $id
@@ -48,28 +52,27 @@ class Mahasiswa_model extends CI_model {
             'wpu-key' => 'rahasia'
         ];
 
-        $response = $this->_client->request('POST', 'mahasiswa', [
+        $response = $this->_client->request('POST', 'mahasiswa',[
             'form_params' => $data
-       ]);
+        ]);
 
         $result = json_decode($response->getBody()->getContents(), true);
-
         return $result;
     }
 
     public function hapusDataMahasiswa($id)
     {
-       $response = $this->_client->request('DELETE', 'mahasiswa', [
-            'form_params' => [
-                'wpu-key' => 'rahasia',
-                'id' => $id
-            ]
-       ]);
+       $response = $this->_client->request('DELETE', 'mahasiswa',[
+        'form_params' => [
+            'id' => $id,
+            'wpu-key' => 'rahasia'
+        ]
+        ]);
 
-       $result = json_decode($response->getBody()->getContents(), true);
-
-       return $result;
+        $result = json_decode($response->getBody()->getContents(), true);
+        return $result;
     }
+
     public function ubahDataMahasiswa()
     {
         $data = [
@@ -81,13 +84,21 @@ class Mahasiswa_model extends CI_model {
             'wpu-key' => 'rahasia'
         ];
 
-        $response = $this->_client->request('PUT', 'mahasiswa', [
+        $response = $this->_client->request('PUT', 'mahasiswa',[
             'form_params' => $data
-       ]);
+        ]);
 
         $result = json_decode($response->getBody()->getContents(), true);
-
         return $result;
     }
 
+    public function cariDataMahasiswa()
+    {
+        $keyword = $this->input->post('keyword', true);
+        $this->db->like('nama', $keyword);
+        $this->db->or_like('jurusan', $keyword);
+        $this->db->or_like('nrp', $keyword);
+        $this->db->or_like('email', $keyword);
+        return $this->db->get('mahasiswa')->result_array();
+    }
 }

@@ -1,5 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+$route['mahasiswa'] = 'controller_yang_sesuai';
 
 /*
 | -------------------------------------------------------------------------

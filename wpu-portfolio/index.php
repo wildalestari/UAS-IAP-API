@@ -1,4 +1,7 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 function get_CURL($url)
 {
 
@@ -210,6 +213,8 @@ if (isset($media['data']) && count($media['data']) >= 1) {
              <div class="col-md-8">
                 <h5><?= $usernameIG; ?></h5>
                 <p><?= $followersIG; ?>Followers</p>
+                <img src="<?= $gambar ?>" alt="Gambar Instagram" class="img-fluid center" style="max-width: 260px; height: auto;">
+
               </div> 
             </div>
             <div class="row">
